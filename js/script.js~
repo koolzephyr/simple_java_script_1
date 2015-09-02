@@ -1,0 +1,52 @@
+	
+function check(){
+	var num = prompt("Enter a number: ");
+	if(num>100){
+	alert("IT is greater than 100");			
+	}
+	else{
+	alert("It is not greater than 100");
+	}			
+}
+
+function convert(){
+	var val = Number(prompt("Enter temperature: "));
+	var toCon = prompt("Select 'c' to convert Celsius to Fahrenheit and 'f' for vice-versa: ");
+	
+	if(toCon=='c'||toCon=='C'){
+		var rslt = val * (9 / 5) + 32;
+		document.write("<h1>"+ val +"\xB0C in Fahrenheit is: "+ rslt +"\xB0F.</h1>");		
+	}
+	else if(toCon=='f'toCon=='F'){
+		var rslt = (val - 32) * (5 / 9);
+		document.write("<h1>"+ val +"\xB0F in Celsius is : "+ rslt +"\xB0C.</h1>");
+	}
+}
+
+function calculate(){
+	var num1 = Number(prompt("Enter number 1: "));
+	var num2 = Number(prompt("Enter number 2: "));
+	
+	var mul = num1 * num2;
+	document.write("<h1>Result of "+ num1 + " * " + num2 +" is : "+ mul +"</h1>");
+	
+	if(num2 != 0){
+		var div = num1 / num2;
+		document.write("<h1>Result of "+ num1 + " / " + num2 +" is : "+ div +"</h1>");
+	}
+	else{
+		document.write("<h1>"+ num1 + " / " + num2 +" is not possible.</h1>");
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
